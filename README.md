@@ -3,7 +3,7 @@
 
 ### 2026년 WSL 설치법(최종수정 2026.03.12)
 
-[Windows 기능 켜기/끄기[ 실행 - Win+R - [optionalfeaturess] 실행(확장자 없음)
+[Windows 기능 켜기/끄기] 실행 - Win+R - [optionalfeatures] 실행(확장자 없음)
 [가상 머신 플랫폼] 체크 설정 (Virtual Machine Platform)
 
 관리자 권한으로 PowerShell 실행
@@ -50,7 +50,7 @@ tasks.json 파일 생성됨.(build 환경 설정하는 파일) - Ctrl+S(저장) 
 Ctrl+J 통해 Terminal 실행
 ./helloworld	→ Build된 helloworld 실행됨.
 
-=========================예상되는 문제===========================
+--------------------------예상되는 문제--------------------------
 1. Windows 기능 켜기/끄기 - 가상 머신 플랫폼 check
 
 
