@@ -12,7 +12,8 @@ Enable-WindowsOptionalFeature -Online -Featurename Microsoft-Windows-Subsystem-L
 ```
 예상된 결과값: [Path:, Online:, RestartNeeded:]
 
-Ubuntu 24.04 설치(MS Store) - 만약 안된다면 Win+R - [wsreset.exe] 실행 / user과 password 설정하기
+Ubuntu 24.04 설치(MS Store) - 만약 안된다면 Win+R - [wsreset.exe] 실행
+user과 password 설정하기
 Ubuntu를 관리자 권한으로 실행 후
 ```
 $ sudo apt update
@@ -20,9 +21,10 @@ $ sudo apt upgrade
 $ sudo apt-get install build-essential gdb
 ```
 
-이 단계에서 systemd, etc/passwd 관련 에러 발생 시 CMD 창을 새로 열고(Ubuntu 창 아님) WSL 2로 업데이트
+이 단계에서 systemd, etc/passwd 관련 에러 발생 시 CMD 창을 새로 열고(Ubuntu 창 아님) WSL 2로 업데이트(하단 예상되는 문제 #2 참고)
 
 VS CODE 설치 [https://code.visualstudio.com/] 실행, 다운로드, 설치
+Ubuntu에서 아래 입력
 ```
 $ pwd		→ /home/(user) 출력됨
 $ mkdir hands-on
