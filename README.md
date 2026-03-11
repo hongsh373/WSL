@@ -7,7 +7,9 @@
 [가상 머신 플랫폼] 체크 설정 (Virtual Machine Platform)
 
 관리자 권한으로 PowerShell 실행
-  Enable-WindowsOptionalFeature -Online -Featurename Microsoft-Windows-Subsystem-Linux
+```
+Enable-WindowsOptionalFeature -Online -Featurename Microsoft-Windows-Subsystem-Linux
+```
 예상된 결과값: [Path:, Online:, RestartNeeded:]
 
 Ubuntu 24.04 설치(MS Store) - 만약 안된다면 Win+R - [wsreset.exe] 실행 / user과 password 설정하기
