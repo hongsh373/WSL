@@ -3,7 +3,7 @@
 
 ### 2026년 WSL 설치법(최종수정 2026.03.12)
 
-[Windows 기능 켜기/끄기] 실행 - Win+R - [optionalfeatures] 실행(확장자 없음)
+[Windows 기능 켜기/끄기] 실행 - Win+R - [optionalfeatures] 실행(확장자 없음)  
 [가상 머신 플랫폼] 체크 설정 (Virtual Machine Platform)
 
 관리자 권한으로 PowerShell 실행
@@ -12,8 +12,8 @@ Enable-WindowsOptionalFeature -Online -Featurename Microsoft-Windows-Subsystem-L
 ```
 예상된 결과값: [Path:, Online:, RestartNeeded:]
 
-Ubuntu 24.04 설치(MS Store) - 만약 안된다면 Win+R - [wsreset.exe] 실행
-user과 password 설정하기
+Ubuntu 24.04 설치(MS Store) - 만약 안된다면 Win+R - [wsreset.exe] 실행  
+user과 password 설정하기  
 Ubuntu를 관리자 권한으로 실행 후
 ```
 $ sudo apt update
@@ -23,7 +23,7 @@ $ sudo apt-get install build-essential gdb
 
 이 단계에서 systemd, etc/passwd 관련 에러 발생 시 CMD 창을 새로 열고(Ubuntu 창 아님) WSL 2로 업데이트(하단 예상되는 문제 #2 참고)
 
-VS CODE 설치 [https://code.visualstudio.com/] 실행, 다운로드, 설치
+VS CODE 설치 [https://code.visualstudio.com/] 실행, 다운로드, 설치  
 Ubuntu에서 아래 입력
 ```
 $ pwd		→ /home/(user) 출력됨
@@ -32,14 +32,14 @@ $ cd hands-on
 $ code .		→ 설치되고 VS CODE 실행됨
 ```
 
-VS CODE Welcome 창 켜짐
-좌측 [EXPLORER] - [v PROJECTS] 호버링 시 왼쪽에서 1번째 [New File..] 클릭
-helloworld.cpp 입력
-우하단 알림창 Install 클릭
+VS CODE Welcome 창 켜짐  
+좌측 [EXPLORER] - [v PROJECTS] 호버링 시 왼쪽에서 1번째 [New File..] 클릭  
+helloworld.cpp 입력  
+우하단 알림창 Install 클릭  
 
-Extension 설치 : CODE 좌측 상단 6개 아이콘 중 제일 아래 네모 4개 아이콘(Extensions) 실행
-@id:ms-vscode.cpptools	→ 설치
-WSL			→ 설치
+Extension 설치 : CODE 좌측 상단 6개 아이콘 중 제일 아래 네모 4개 아이콘(Extensions) 실행  
+@id:ms-vscode.cpptools	→ 설치  
+WSL			→ 설치  
 
 코드 입력
 ``` C
@@ -49,9 +49,9 @@ void main() {
 }
 ```
 
-메뉴 - [Terminal] - [Configure Default Build Task...] - 위에 뜬 창 중 2번째 [C/C++: g++ build active file] 실행
-tasks.json 파일 생성됨.(build 환경 설정하는 파일) - Ctrl+S(저장) 후 닫고, helloworld.cpp Ctrl+Shift+B 통해 build
-Ctrl+J 통해 Terminal 실행
+메뉴 - [Terminal] - [Configure Default Build Task...] - 위에 뜬 창 중 2번째 [C/C++: g++ build active file] 실행  
+tasks.json 파일 생성됨.(build 환경 설정하는 파일) - Ctrl+S(저장) 후 닫고, helloworld.cpp Ctrl+Shift+B 통해 build  
+Ctrl+J 통해 Terminal 실행  
 ./helloworld	→ Build된 helloworld 실행됨.
 
 ----------------------------------------------------
