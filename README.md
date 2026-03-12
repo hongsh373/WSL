@@ -12,7 +12,8 @@ Enable-WindowsOptionalFeature -Online -Featurename Microsoft-Windows-Subsystem-L
 ```
 예상된 결과값: [Path:, Online:, RestartNeeded:]
 
-Ubuntu 24.04 설치(MS Store) - 만약 안된다면 Win+R - [wsreset.exe] 실행  
+Microsoft Store에서 Ubuntu 24.04 설치(MS Store)  
+(만약 안된다면 Win+R - [wsreset.exe] 실행)  
 user과 password 설정하기  
 Ubuntu를 관리자 권한으로 실행 후
 ```
